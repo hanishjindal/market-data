@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter-box {
+  margin: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: fit-content;
+  gap: 10px;
+}
+
+.filter-box input {
+  padding: 5px;
+  width: 200px;
+}
+
+.filter-box select {
+  padding: 5px;
+}
+
+.filter-box button {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the table header */
+thead tr:last-child {
+  background-color: gray;
+  color: #fff;
+}
+
+th {
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  outline: 1px solid rgb(66, 66, 66);
+  font-size: 14px;
+  color: blue;
+}
+
+/* Style the table body */
+tbody {
+  background-color: #f2f2f2;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+  width: fit-content;
+}
+
+tr:nth-child(even) {
+  background: #f0f8ff;
+}
+
+td {
+  padding: 10px;
+  font-size: 12px;
+  border: 0.1px solid rgb(196, 196, 196);
+}
+
+/* Add some hover effect to the rows */
+td:hover {
+  background-color: #ddd;
+}
+
+.loadMore {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loadMore button {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
 }
